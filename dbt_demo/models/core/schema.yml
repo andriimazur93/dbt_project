@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: dim_locations
+    columns:
+      - name: location_id
+      - name: street_address
+      - name: postal_code
+      - name: city
+      - name: state_province
+      - name: country_name
+      - name: region_name
+
+  - name: dim_departments
+    columns:
+      - name: department_id
+      - name: department_name
+
+  - name: dim_employees
+    columns:
+      - name: employee_id
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: phone_number
+      - name: hire_date
+  
+  - name: dim_jobs
+    columns:
+     - name: job_id
+     - name: job_title
+     - name: min_salary
+     - name: max_salary
+  
+  - name: dim_managers
+    columns:
+     - name: manager_id
+     - name: first_name
+     - name: last_name
+     - name: email
+     - name: phone_number
+     - name: hire_date
+     
+  - name: fact_hr
+    columns:
+     - name: employee_dim_key
+     - name: manager_dim_key
+     - name: job_dim_key
+     - name: departments_dim_key
+     - name: location_dim_key
+     - name: salary
+     - name: commission_pct
+     - name: created_date
+     - name: updated

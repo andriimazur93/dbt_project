@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: ods
+    columns:
+      - name: employee_id 
+      - name: first_name 
+      - name: last_name 
+      - name: email 
+      - name: phone_number 
+      - name: start_date 
+      - name: end_date 
+      - name: job_id 
+      - name: manager_id 
+      - name: department_id 
+      - name: department_name 
+      - name: location_id 
+      - name: city 
+      - name: state_province 
+      - name: country_name 
+      - name: region_id 
+      - name: salary 

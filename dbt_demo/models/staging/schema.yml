@@ -1,0 +1,71 @@
+
+version: 2
+
+models:
+  - name: st_countries
+    description: "A table will all countries"
+    columns:
+      - name: country_id
+      - name: country_name
+      - name: region_id
+      - name: created_on
+      - name: updated_on
+      
+  - name: st_locations
+    description: "A table will all locations"
+    columns:
+      - name: location_id
+      - name: street_address
+      - name: postal_code
+      - name: city
+      - name: state_province
+      - name: country_id
+      - name: created_on
+      - name: updated_on
+
+  - name: st_regions
+    description: "A table will all regions"
+    columns:
+      - name: region_id
+      - name: region_name
+      - name: created_on
+      - name: updated_on
+
+  - name: st_jobs
+    description: "A table will all jobs"
+    columns:
+      - name: employee_id
+      - name: start_date
+      - name: end_date
+      - name: job_id
+      - name: department_id
+      - name: created_on
+      - name: updated_on
+
+  - name: st_employee
+    description: "A table will all employees"
+    columns:
+      - name: employee_id
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: phone_number
+      - name: hire_date
+      - name: job_id
+      - name: salary
+      - name: commission_pct
+      - name: manager_id
+      - name: department_id
+      - name: created_on
+      - name: updated_on
+
+  
+  - name: st_departments
+    description: "A table will all departments"
+    columns:
+      - name: department_id
+      - name: department_name
+      - name: manager_id
+      - name: location_id
+      - name: created_on
+      - name: updated_on
